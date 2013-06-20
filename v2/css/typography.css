@@ -1,0 +1,95 @@
+/* @group TYPOGRAPHY */
+/* font-face declarations may need to be edited for non web-kit platforms */
+
+@font-face {
+	font-family: "Irvin";
+	src: url("../fonts/NYIrvEM.otf"), local("NYIrvinEM");	
+	font-weight: normal;
+	font-style: normal; 
+}
+@font-face {
+	font-family: "Caslon";
+	src: url("../fonts/ACaslonPro-Regular.otf"), local("ACaslonPro-Regular");
+	font-weight: normal;
+	font-style: normal; 
+}
+@font-face {
+	font-family: "Caslon";
+	src: url("../fonts/ACaslonPro-Italic.otf"), local("ACaslonPro-Italic");
+	font-weight: normal;
+	font-style: italic; 
+}
+@font-face {
+	font-family: "Caslon";
+	src: url("../fonts/ACaslonPro-Bold.otf"), local("ACaslonPro-Bold");
+	font-weight: bold;
+	font-style: normal; 
+}
+@font-face {
+	font-family: "Caslon";
+	src: url("../fonts/ACaslonPro-BoldItalic.otf"), local("ACaslonPro-BoldItalic");
+	font-weight: bold;
+	font-style: italic;
+}
+@font-face {
+	font-family: "nyvogue";
+	src: url("../fonts/NYVogGoaNor.otf"), local("NYVogueGoat");
+	font-weight:normal;
+	font-style: normal; 
+}
+@font-face {
+	font-family: "Neutra";
+	src: url("../fonts/Neutra2Text-Book.otf"), local("Neutra2Text-Book");
+	font-weight: normal;
+	font-style: normal; 
+}
+@font-face {
+	font-family: "Neutra";
+	src: url("../fonts/Neutra2Text-BookItalic.otf"), local("Neutra2Text-BookItalic");
+	font-weight: normal;
+	font-style: italic; 
+}
+@font-face {
+	font-family: "Neutra";
+	src: url("../fonts/Neutra2Text-Bold.otf"), local("Neutra2Text-Bold");
+	font-weight: bold;
+	font-style: normal; 
+}
+@font-face {
+	font-family: "Neutra";
+	src: url("../fonts/Neutra2Text-BoldItalic.otf"), local("Neutra2Text-BoldItalic.otf");
+	font-weight: bold;
+	font-style: italic; 
+}
+@font-face {
+	font-family: "NeutraDemi";
+	src: url("../fonts/Neutra2Text-Demi.otf"), local("Neutra2Text-Demi");
+	font-weight: normal;
+	font-style: normal; 
+}
+@font-face {
+	font-family: "NeutraDemi";
+	src: url("../fonts/Neutra2Text-DemiItalic.otf"), local("Neutra2Text-DemiItalic");
+	font-weight: normal;
+	font-style: italic; 
+}
+@font-face {
+	font-family: "NeutraDisplay";
+	src: url("../fonts/Neutra2Display-Titling.otf"), local("Neutra2Display-Titling");
+	font-weight: bold;
+	font-style: normal; 
+}
+@font-face {
+	font-family: "NeutraLight";
+	src: url("../fonts/Neutra2Text-Light.otf"), local("Neutra2Text-Light");
+	font-weight: normal;
+	font-style: normal; 
+}
+@font-face {
+	font-family: "NeutraLight";
+	src: url("../fonts/Neutra2Text-Light.otf"), local("Neutra2Text-Light");
+	font-weight: normal;
+	font-style: italic; 
+}
+
+/* @end */

@@ -1,0 +1,57 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+	<meta name="GENERATOR" content="Arachnophilia 3.9">
+	<meta name="description" content="Storytell">
+	<meta name="keywords" content="HTML, tags, commands">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>The New Yorker - Makeup Department</title>
+	
+	<link rel="shortcut icon" href="https://app.asana.com/-/static/luna/browser/images/favicon.ico">
+	<link href="./css/style.css" rel="stylesheet" type="text/css">	
+	<link href="./css/gantt2.css" rel="stylesheet" type="text/css">
+	
+	<script type="text/javascript" src="./js/jquery.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+
+</head>
+
+<body>
+
+	<div id="header">
+		<img src="./img/header.png" />
+		<!--<h1>The New Yorker</h1>
+		<h2>Makeup Department<span class="grey">Projects Overview</span></h2>-->
+	</div>
+	<div id="nav">
+		<li class="active" id="viz" onclick="changeView('viz')">Visualized View</li>
+		<li id="gantt" onclick="changeView('gantt')">Gantt Chart View</li>
+	</div>
+
+	<div id="filtersNav">
+		<div id="tagsFilter"></div>
+		<div id="projectsFilter"></div>
+	</div>
+
+	<div class="gantt"></div>
+	
+	<div id="projects"></div>
+	
+	<div id="bottomNav">
+		<div id="ganttNav">
+			<img src="./img/out.png" />
+			<div id="ganttScrollBar">
+
+			</div>
+			<img src="./img/out.png" />
+		</div>
+		<div id="bottomNavDescriptions"></div>
+		<div id="bottomNavTaskDescriptions"></div>
+		<div id="users"></div>
+	</div>
+
+</body>
+<script type="text/javascript" src="./js/jquery.fn.gantt.js">​</script>
+<script type="text/javascript" src="./js/script.js"></script>
+
+</html>

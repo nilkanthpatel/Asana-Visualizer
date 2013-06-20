@@ -1,0 +1,255 @@
+@font-face {
+	font-family: "Irvin";
+	src: url("../fonts/NYIrvEM.otf"), local("NYIrvinEM") format("opentype");	
+	font-weight: normal;
+	font-style: normal; 
+}
+
+body, html {
+	font-family: 'Avenir', 'Helvetica', sans-serif;
+	font-weight:300;
+	padding:0;
+	margin:0;
+	text-align:center;
+	overflow:hidden;
+}
+html {
+	padding:0;
+}
+
+#header {
+	height:100px;
+	background:black;
+	background-size:cover;
+	background-position: center center;
+	z-index:1001;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+#header h1 {
+	color:white;
+	padding-top:20px;
+	margin:0;
+	margin-bottom:10px;
+	font-family: 'NYIrvinEM';
+} 
+#header h2 {
+	color:white;
+	font-family:"Neutraface", "Helvetica";
+	text-transform:lowercase;
+	margin:0;
+}
+span.grey {
+	margin-left:10px;
+	padding-left:10px;
+	color:gray;
+}
+#header img {
+	width:400px;
+	max-width:80%;
+	margin-top:20px;
+}
+#nav {
+	width: 100%;
+	background: #dbdbdb;
+	position: absolute;
+	z-index: 1000;
+	height:30px;
+	text-align:center;
+	top:100px;
+}
+#nav li {
+	width:40%;
+	display:inline-block;
+	font-size:14px;
+	font-weight:200;
+	margin-top: 7px;
+	cursor:pointer;
+	color:gray;
+	text-transform:uppercase;
+}
+#nav li.active {
+	color:black;
+}
+#filtersNav {
+	width: 10%;
+	min-width:150px;
+	background: white;
+	position: absolute;
+	top: 130px;
+	right: 0px;
+	z-index: 100;
+}
+#filtersNav h1 {
+	font-size:36px;
+	font-weight:100;
+	text-transform:uppercase;
+}
+#filtersNav h2 {
+	font-size: 13px;
+	margin: 5px 20px;
+	text-align: left;
+	color:#d7d7d7;
+	cursor:pointer;
+	font-weight: 200;
+}
+#filtersNav h2:hover, #filtersNav h2.active {
+	color:black;
+}
+#bottomNav {
+	height:200px;
+	background:black;
+	z-index:1000;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+#bottomNav #users {
+	width:220px;
+	margin:10px;
+	opacity:0;
+	position: absolute;
+	right: 0px;
+}
+#bottomNav #users li {
+	list-style:none;
+	width:45px;
+	height:45px;
+	background:white;
+	float:right;
+	margin:2px;
+	background-size:cover;
+	background-position:center center;
+	background-repeat:no-repeat;
+	opacity:.8;
+	cursor:pointer;
+	border: 2px solid black;
+}
+#bottomNav #users li:hover {
+	opacity:1;
+}
+#projects {
+	position: relative;
+	top:120px;
+	width:90%;
+}
+#projects .projectCircle {
+	background: #dbdbdb;
+	border-radius: 50%;
+	display: inline-block;
+	margin:30px;
+	cursor:pointer;
+}
+#projects .projectCircle:hover {
+	background: red;
+}
+#bottomNav #users li.active {
+	opacity:1;
+	border: 2px solid white;
+	box-shadow:0 0 0;
+}
+#bottomNav #users li p {
+	font-weight: 100;
+	font-size: 9px;
+	text-transform: uppercase;
+	margin-top: 15px;
+}
+#bottomNav #bottomNavDescriptions, #bottomNav #bottomNavTaskDescriptions {
+	width: 60%;
+	float: left;
+	color: white;
+	text-align: left;
+	padding-left: 25px;
+}
+#bottomNav #ganttNav {
+	width:100%;
+	clear:both;
+	margin:auto;
+	padding-top:4px;
+	background: #dbdbdb;
+}
+#bottomNav #ganttNav img {
+	width:20px;
+	display:inline-block;
+}
+#bottomNav #ganttNav #ganttScrollBar {
+	width: 50%;
+	height: 20px;
+	display:inline-block;
+}
+#bottomNav #bottomNavDescriptions, #bottomNav #bottomNavTaskDescriptions .description {
+	width:65%;
+	margin-right:5%;
+	float:left;
+}
+#bottomNav #bottomNavTaskDescriptions .dates {
+	width: 30%;
+	float: left;
+}
+#bottomNav #bottomNavTaskDescriptions .dates .calendar {
+	float:left;
+	width:44%;
+	margin:3%;
+	font-weight:100;
+	text-transform: uppercase;
+}
+#bottomNav #bottomNavTaskDescriptions .dates .calendar h2 {
+	text-transform: uppercase;
+	color:gray;
+}
+#bottomNav #bottomNavTaskDescriptions .dates .calendar p {
+	margin:0;
+}
+#bottomNav #bottomNavTaskDescriptions .dates .calendar .day {
+	float: left;
+	width:100%;
+	font-size: 20px;
+}
+#bottomNav #bottomNavTaskDescriptions .dates .calendar .month {
+	float: left;
+	width:100%;
+	letter-spacing:1.5px;
+	font-size:12px;
+}
+#bottomNav #bottomNavTaskDescriptions a {
+	text-decoration:none;
+	color:gray;
+}
+#bottomNav #bottomNavTaskDescriptions a:hover {
+	color:white;
+}
+#bottomNav #bottomNavDescriptions .description, #bottomNav #bottomNavTaskDescriptions {
+	display:none;
+}
+#bottomNav #bottomNavTaskDescriptions .description p {
+	height: 120px;
+	overflow: auto;
+	font-weight:100;
+	font-size:13px;
+}
+#bottomNav #bottomNavTaskDescriptions .description p:first-letter {
+    text-transform: uppercase;
+}
+#bottomNav #bottomNavDescriptions .active {
+	display:block;
+}
+#bottomNav #bottomNavDescriptions h1, #bottomNav #bottomNavTaskDescriptions h1 {
+	font-size:22px;
+	margin-bottom:0;
+	font-weight:200;
+	text-transform: uppercase;
+}
+#bottomNav #bottomNavDescriptions h2, #bottomNav #bottomNavTaskDescriptions h2 {
+	font-size:18px;
+	margin:0;
+	font-weight:200;
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 550px) {
+
+}
